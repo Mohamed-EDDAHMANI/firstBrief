@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web Page</title>
+    <meta name="description" content="Basée en France, notre entreprise offre des solutions innovantes et des services de qualité. Notre équipe d'experts s'engage à satisfaire les besoins de nos clients avec des produits sur mesure.">
+    <title>Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,13 +13,18 @@
     <nav>
         <div class="container">
             <div class="logo">
-                <img src="1-removebg-preview.png" alt="">
+                <img src="1-removebg-preview-removebg-preview.png" alt="">
             </div>
-            <ul>
-                <li><a href="#">Home</a></li>
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="burg">
+                <div class="childs fr"></div>
+                <div class="childs sq"></div>
+                <div class="childs ls"></div>
+            </div>
         </div>
     </nav>
     
@@ -56,20 +62,27 @@
                     <p>Email: info@ourwebsite.com</p>
                     <p>Phone: +123 456 7890</p>
                     <div class="social-icons">
-                        <a href="#"><img src="Professional Photo.jpg" alt="Facebook"></a>
-                        <a href="#"><img src="b11833d9-595f-48bb-b904-e4234dddcddd.jpg" alt="Twitter"></a>
-                        <a href="#"><img src="télécharger (2).jpg" alt="Instagram"></a>
+                        <a href="#"><img src="Professional-Photo.jpeg" alt="Facebook" width="50" height="50"></a>
+                        <a href="#"><img src="b11833d9-595f-48bb-b904-e4234dddcddd.jpeg" alt="Twitter" width="50" height="50"></a>
+                        <a href="#"><img src="télécharger-_2_.jpeg" alt="Instagram" width="50" height="50"></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 Our Website. All Rights Reserved.</p>
-                <img src="1-removebg-preview.png" alt="">
+                <img src="1-removebg-preview-removebg-preview.png" alt="">
             </div>
         </div>
     </footer>
 
-
+    <script>
+        const menu = document.querySelector('.menu');
+        const burg = document.querySelector('.burg');
+        burg.onclick = function() {
+            menu.classList.toggle('active');
+            burg.classList.toggle('change');
+        }
+    </script>
 
 
 </body>
